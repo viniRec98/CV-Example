@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Information</title>
+    </head>
+    <body>
+        <h3>You may contact me through the following ways:</h3>
+        <ol>
+            <li>Email Address </li>
+            <ul>
+                <li>v04jrc@gmail.com</li>
+            </ul>
+            <li>Linkedin</li>
+            <ul>
+                <li><a href="www.linkedin.com/in/vinicio-recinos-621712227">Vinicio Recinos</a></li>
+            </ul>
+        </ol>
+        <hr>
+        <form action="mailto:vinicio.jose49@gmail.com" method="post" enctype="text/plain"> 
+            <!-- the action attribute specifies what should happen when you hit the submit button of the form-->
+            <!-- what mailto do is when you press the submit button,it will open up your default mail client and it puts in the email
+            address that you specify after the :   -->
+            <!-- the post method means that we're going to transfer what the user types into these input fields into the
+            email client -->
+            <!-- the data in our form is encoded in plain text-->
+            <!-- the name attribute identifies the data that's inside each of these inputs-->
+            <label>Enter your name: </label>
+            <input type="text" name="yourName">
+            <br>
+            <label>Enter your email: </label>
+            <input type="email" name="yourEmail">
+            <br>
+            <label>Write a message: </label>
+            <br>
+            <textarea rows="10" cols="30" name="yourMessage">
+            </textarea>
+            <br>
+            <label>Do you want to sign up for the email list?</label>
+            <input type="checkbox">
+            <br>
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
